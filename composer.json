@@ -1,0 +1,20 @@
+{
+  "name": "radoslawkoziol/smart-content",
+  "description": "Smart Content",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Radosław Kozioł",
+      "email": "koziol.radek@gmail.com"
+    }
+  ],
+  "require": {
+    "netresearch/jsonmapper": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "radoslawkoziol\\SmartContent\\": "src"
+    }
+  }
+}
