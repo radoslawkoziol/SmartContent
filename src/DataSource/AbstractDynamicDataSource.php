@@ -11,11 +11,11 @@ namespace radoslawkoziol\SmartContent\DataSource;
 
 abstract class AbstractDynamicDataSource extends AbstractDataSource
 {
-    protected $limit;
-    protected $order = 'desc';
-    protected $filter;
-    protected $data;
-    protected $account_id = -1;
+    public $limit;
+    public $order = 'desc';
+    public $filter;
+    public $data;
+    public $account_id = -1;
 
     /**
      * AbstractDynamicDataSource constructor.
