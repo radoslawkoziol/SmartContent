@@ -25,27 +25,7 @@ class DynamicBannerWithCategoryProductSlider extends AbstractDynamicDataSource {
         if(!$this->category) return;
         $this->products = $this->category->getBestProductsGlobal();
         $this->null = false;
-        // $this->title = $this->category->getProdCatLangTitle();
-        $this->category_url = route('products.list', ['slug' => $slug]);
-
-
-        // $this->setAccountId($account_id);
-        // $builder = AccountCategory::select('*')->where('prod_cat_id', 'in', $prod_cat_ids);
-        // if($account_id != -1) {
-        //     $builder->where('remote_account_id', '=', $this->getAccountId());
-        // }
-        //
-        // $this->category = $builder->first();
-        // if($this->category) {
-        //     $this->null = false;
-        //     $this->category_url = routeWithDomain('products.list', ['slug' => $this->category->slug]);
-        //     if(!$this->title) {
-        //         $this->title = $this->category->prod_cat_lang_title;
-        //     }
-        // }
-
-
-
+        $this->category_url = routeWithDomain('products.list', ['slug' => $slug]);
 
     }
 
